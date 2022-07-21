@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: 'Poor Story', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+  font-weight: normal;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: 'Rose';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_09@1.0/Rose.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
