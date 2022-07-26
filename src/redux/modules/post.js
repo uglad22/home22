@@ -1,9 +1,11 @@
 import {db} from "../../shared/firebase";
 import { collection, getDocs } from "firebase/firestore";
 
+//Actions
 const LOAD = "post/LOAD";
 const CREATE = "post/CREATE";
 
+//Actions Creators
 export const post_upload = (post_id , user_name, image_url, content, like, comment_list, today) => {
   return {type: CREATE, post_id , user_name, image_url, content, like, comment_list, today}
 }
@@ -12,7 +14,7 @@ export const post_load = (post_list) => {
   return {type: LOAD, post_list};
 }
 
-
+//초기값 지정
 const initialState = [
 //   {
 //   post_id : 1,
@@ -25,7 +27,7 @@ const initialState = [
 // }
 ];
 
-
+//Reducer
 export const loadPostFB = () => {
   return async function (dispatch) {
     //포스트 정보 가져온다 파이어 스토어에서!
